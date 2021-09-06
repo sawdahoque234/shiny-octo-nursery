@@ -1,0 +1,337 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+{% include 'navigation.html'%}
+<style>
+    .img-fluid{
+      height: 180px !important;
+      width: auto;
+    }
+  </style>
+
+<div class="container bg-light mb-2">
+    <h1 class="text-center fw-bold text-uppercase fst-italic text-danger">Seeds</h1>
+    <h4 class="text-center fw-bold text-uppercase text-decoration-underline py-2">Vegetables Seeds</h4>
+      <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 mb-5">
+        <div class="col">
+          <div class=" border bg-white">
+              <img src="{% static 'img/seeds/vs/vs1.jfif' %}" class="img-fluid" alt="">
+              <h5 class="text-center text-dark">Bean Seeds</h5>
+              <h5 class="text-center text-danger">1 Pkt-50Tk</h5>
+              
+              <div class="row-cols-lg-6 center-item">
+                <div class="input-group">
+                  <button style="border: 1px solid red;" class="btn   text-dark ">Add to Cart</Button>
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus"></i></button>
+
+                 <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                    
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+          </div>
+          <!-- col** -->
+        </div>
+
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/seeds/vs/vs2.jfif' %}"  class="img-fluid" alt="">
+            <h5 class="text-center text-dark ">Radish Seeds</h5>
+            <h5 class="text-center text-danger">1 Pkt-50Tk</h5>
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid red;" class="btn   text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/seeds/vs/vs3.jpg' %}"  class="img-fluid px-2" alt="">
+            <h5 class="text-center text-dark">Lal shak Seeds</h5>
+            <h5 class="text-center text-danger">1 Pkt-30Tk</h5>
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid red;" class="btn   text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/seeds/vs/vs4.jfif' %}"  class="img-fluid" alt="">
+            <h5 class="text-center text-dark">PumpKine Seeds</h5>
+            <h5 class="text-center text-danger">1 Pkt-30Tk</h5>
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid red;" class="btn   text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/seeds/vs/vs6.jfif' %}"  class="img-fluid" alt="">
+            <h5 class="text-center text-dark ">Corn Seeds</h5>
+            <h5 class="text-center text-danger">1 Pkt-60Tk</h5>
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid red;" class="btn   text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/seeds/vs/vs7.jpg' %}" class="img-fluid" alt="">
+            <h5 class="text-center text-dark ">Ladies Finger Seeds</h5>
+            <h5 class="text-center text-danger">1 Pkt-40Tk</h5>
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid red;" class="btn   text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/seeds/vs/vs8.jfif' %}"  class="img-fluid" alt="">
+            <h5 class="text-center text-dark ">Green papper Seeds</h5>
+            <h5 class="text-center text-danger">1 Pkt-30Tk</h5>
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid red;" class="btn  text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/seeds/vs/vs9.jfif' %}" class="img-fluid" alt="">
+            <h5 class="text-center text-dark ">EggPlant Seeds</h5>
+            <h5 class="text-center text-danger">1 Pkt-40Tk</h5>
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid red;" class="btn   text-danger text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/seeds/vs/vs10.jfif' %}"  class="img-fluid" alt="">
+            <h5 class="text-center text-dark ">Cucumber Seeds</h5>
+            <h5 class="text-center text-danger">1 Pkt-30Tk</h5>
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid red;" class="btn   text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/seeds/vs/vs5.jfif' %}"  class="img-fluid" alt="">
+            <h5 class="text-center text-dark ">Chili Seeds</h5>
+            <h5 class="text-center text-danger">1 Pkt-30Tk</h5>
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid red;" class="btn   text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+      <!-- *************************fruits seed**************** -->
+      <div class="container mb-5">
+    <h4 class="text-center fw-bold text-uppercase py-2 text-decoration-underline" id="#fruit">Fruits Seeds</h4>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class=" border bg-white shadow-lg">
+              <img src="{% static 'img/seeds/fs/fs3.jfif' %}" class="img-fluid" alt="">
+              <h5 class="text-center text-dark ">Grape Seeds</h5>
+              <h5 class="text-center text-danger">1 Pkt-250Tk</h5>
+              
+              <div class="row-cols-lg-6 center-item">
+                <div class="input-group">
+                  <button style="border: 2px solid burlywood;" class="btn  mx-2  text-dark ">Add to Cart</Button>
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus "></i></button>
+
+                 <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                    
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class=" border bg-white shadow-lg">
+              <img src="{% static 'img/seeds/fs/fs1.jfif' %}"class="img-fluid" alt="">
+              <h5 class="text-center text-dark ">Apple Seeds</h5>
+              <h5 class="text-center text-danger">1 Pkt-150Tk</h5>
+              
+              <div class="row-cols-lg-6 center-item">
+                <div class="input-group">
+                  <button style="border: 2px solid burlywood;" class="btn  mx-2 text-dark ">Add to Cart</Button>
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus "></i></button>
+
+                 <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                    
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class=" border bg-white shadow-lg">
+              <img src="{% static 'img/seeds/fs/fs2.jfif' %}" class="img-fluid" alt="">
+              <h5 class="text-center text-dark ">Cherry Seeds</h5>
+              <h5 class="text-center text-danger">1 Pkt-200Tk</h5>
+              
+              <div class="row-cols-lg-6 center-item">
+                <div class="input-group">
+                  <button style="border: 2px solid burlywood;" class="btn   text-dark mx-2 ">Add to Cart</Button>
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus "></i></button>
+
+                 <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                    
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class=" border bg-white shadow-lg">
+              <img src="{% static 'img/seeds/fs/fs6.jfif' %}" class="img-fluid" alt="">
+              <h5 class="text-center text-dark ">Orange Seeds</h5>
+              <h5 class="text-center text-danger">1 Pkt-100Tk</h5>
+              
+              <div class="row-cols-lg-6 center-item">
+                <div class="input-group">
+                  <button style="border: 2px solid burlywood;" class="btn   text-dark mx-2">Add to Cart</Button>
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus "></i></button>
+
+                 <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                    
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+    <div class="container bg-light mb-5">
+        <h1 class="text-center text-success fw-bolder text-decoration-underline fst-italic py-3">How to Grow Plants From Seeds Step by Step</h1>
+        <div class="row">
+          <div class="col-lg-5 rounded-3 border-3">
+            <div><img src="{% static 'img/seed2.jfif' %}" class="w-75 rounded-3 border-3   mx-auto d-block" alt=""></div>
+          </div>
+            
+          <div class="col-lg-7  rounded-3 border-3">
+            <div><img src="{% static 'img/seed1.jpg' %}" class="w-100 rounded-3 mx-auto d-block" alt=""></div>
+          </div>
+        </div>
+    </div>
+    <div class="container m-4">
+      <div class="bg-light mx-5 px-5">
+        <h4 class="fw-bold fst-italic text-success text-decoration-underline">1. Choose a container.</h4>
+        <small>Seed-starting containers should be clean, measure at least 2-3 inches deep and have drainage holes. They can be plastic pots, cell packs, peat pots, plastic flats, yogurt cups, even eggshells.  As long as they are clean (soak in a 9 parts water to one part household bleach for 10 minutes), the options are endless. You can also buy seed-starting kits, but don't invest a lot of money until you're sure you'll be starting seeds every year. If you start seeds in very small containers or plastic flats, you'll need to transplant seedlings into slightly larger pots once they have their first set of true leaves. Keep in mind that flats and pots take up room, so make sure you have enough sunny space for all the seedlings you start.
+        </small>
+      </div>
+
+      <div class="bg-light mx-5 px-5">
+        <h4 class="fw-bold fst-italic text-success text-decoration-underline">2. Start with quality soil.</h4>
+        <small>Sow seeds in sterile, seed-starting mix or potting soil available in nurseries and garden centers. Don't use garden soil, it’s too heavy, contains weeds seeds, and possibly, disease organisms. Wet the soil with warm water before filling seed-starting containers.</small>
+      </div>
+      <div class="bg-light mx-5 px-5">
+        <h4 class="fw-bold fst-italic text-success text-decoration-underline">3. Plant at the proper depth.</h4>
+        <small>You’ll find the proper planting depth on the seed packet. The general rule of thumb is to cover seeds with soil equal to three times their thickness – but be sure to read the seed packet planting instructions carefully. Some seeds, including certain lettuces and snapdragons, need light to germinate and should rest on the soil surface but still be in good contact with moist soil. Gentle tamping after sowing will help.  After planting your seeds, use a spray bottle to wet the soil again.</small>
+      </div>
+      <div class="bg-light mx-5 px-5">
+        <h4 class="fw-bold fst-italic text-success text-decoration-underline">4. Water wisely.</h4>
+        <small>Always use room-temperature water. Let chlorinated water sit overnight so chlorine can dissipate or use distilled water. Avoid using softened water. It's important to keep soil consistently moist, but avoid overwatering, which promotes diseases, that can kill seedlings. Try not to splash water on leaves. An easy way to avoid this – as well as overwatering – is to dip base of your containers in water and allow the soil to absorb moisture from the bottom until moist. Some seed-starting kits supply a wicking mat that conducts water from a reservoir to dry soil. This may be the most goof-proof method of watering seedlings but you still have to be careful that the soil doesn’t stay too wet. Whatever you do, don't miss a watering and let seeds or seedlings dry out. It’s a death sentence.</small>
+      </div>
+      <div class="bg-light mx-5 px-5">
+        <h4 class="fw-bold fst-italic text-success text-decoration-underline">5. Maintain consistent moisture.</h4>
+        <small>
+          Prior to germination, cover your container to help trap moisture inside. Seed-starting kits typically come with a plastic cover. You can also use a plastic bag, but it should be supported so it doesn’t lay flat on the soil. Remove covers as soon as seeds sprout. Once seedlings are growing, reduce watering so soil partially drys, but don’t let them wilt.
+        </small>
+      </div>
+      <div class="bg-light mx-5 px-5">
+        <h4 class="fw-bold fst-italic text-success text-decoration-underline">6. Keep soil warm</h4>
+        <small>Seeds need warm soil to germinate.  They germinate slower, or not at all, in soils that are too cool. Most seeds will germinate at around 78°F. Waterproof heating mats, designed specifically for germinating seeds, keep soil at a constant temperature. You can buy them in most nurseries and garden centers.  Or, you can place seed trays on top of a refrigerator or other warm appliance until seeds sprout. After germination, air temperature should be slightly below 70°F. Seedlings can withstand air temperature as low as 50°F as long as soil temperature remains 65-70°F.</small>
+      </div>
+      <div class="bg-light mx-5 px-5">
+        <h4 class="fw-bold fst-italic text-success text-decoration-underline">7. Fertilize.</h4>
+        <small>Start feeding your seedlings after they develop their second set of true leaves, applying a half-strength liquid fertilizer weekly.  Apply it gently so seedlings are not dislodged from the soil. After four weeks, apply full-strength liquid fertilizer every other week until transplanting.</small>
+      </div>
+      <div class="bg-light mx-5 px-5">
+        <h4 class="fw-bold fst-italic text-success text-decoration-underline">8. Give seedlings enough light.</h4>
+        <small>Not enough light leads to leggy, tall seedlings that will struggle once transplanted outdoors. In mild winter areas, you can grow stocky seedlings in a bright south-facing window. Farther north, even a south-facing window may not provide enough light, especially in the middle of winter. Ideally, seedlings need 14-16 hours of direct light per day for healthiest growth. If seedlings begin bending toward the window, that’s a sure sign they are not getting enough light. Simply turning the pots won’t be enough - you may need to supply artificial lighting.  Nurseries and mail order seed catalogs can provide lighting kits. Follow instructions carefully.</small>
+      </div>
+      <div class="bg-light mx-5 px-5">
+        <h4 class="fw-bold fst-italic text-success text-decoration-underline">9. Circulate the air.</h4>
+        <small>Circulating air helps prevents disease and encourages the development of strong stems. Run a gentle fan near seedlings to create air movement. Keep the fan a distance away from the seedlings to avoid blasting them directly.</small>
+      </div>
+      <div class="bg-light mx-5 px-5 mb-5">
+        <h4 class="fw-bold fst-italic text-success text-decoration-underline">10. Harden off seedlings before transplanting outdoors.</h4>
+        <small>Before moving seedlings outdoors, they need to be acclimatized to their new, harsher surroundings. This procedure is called "hardening off.</small>
+      </div>
+</div>
+    </div>
+{% endblock %}

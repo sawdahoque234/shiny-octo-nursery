@@ -1,0 +1,391 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content%}
+{% include 'navigation.html'%}
+
+<style>
+   
+    .img-fluid{
+      height: 230px !important;
+      width: auto;
+    }
+  </style>
+<div class="container">
+    <h2 class="text-center mxx-auto m-3 fw-bolder text-danger text-uppercase">Spices Plants</h2>
+    <div class="container mb-5 py-3 bg-light">
+      <div class="row gx-2 mb-3">
+        <div class="col-lg-3 p-2">
+          <div class="rounded-3 shadow-lg">
+                  <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/spices  plants/s1.jpg' %}" alt="">
+              <div class="text-center">
+                  <h4 class="fw-bolder">
+                    Alu Bukhara Plant 
+                </h4>
+                  <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:550</p>
+                  <span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </span>
+              </div>
+                <div class="row-cols-3 center-item">
+                  <div class="input-group number-spinner px-1  py-2">
+                    <button style="border: 1px solid orangered;" class="btn p-2 text-danger  a btn-white  mx-3">Add to Cart </button>
+                     <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                     <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                     <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-2" >
+          <div class="rounded-3 shadow-lg">
+            <!-- a2 -->
+              <img class="img-fluid rounded-3 w-100 border-3 p-4" src="{% static 'img/plants/spices  plants/s2.jpg' %}"  alt="">
+              <div class="text-center">
+                  <h4 class="fw-bolder">Betal Leaf Tree
+                </h4>
+                  <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:50</p>
+                  <span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </span>
+              </div>
+                <div class="row-cols-3 center-item">
+                  <div class="input-group number-spinner px-1  py-2">
+                    <button style="border: 1px solid orangered;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                     <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                     <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                     <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-2" >
+            <div class="rounded-3 shadow-lg">
+              <!-- a2 -->
+                <img class="img-fluid rounded-3 w-100 border-3 p-4" src="{% static 'img/plants/spices  plants/s3.jpg' %}"  alt="">
+                <div class="text-center">
+                    <h4 class="fw-bolder">Dalchini  Plant
+
+                  </h4>
+                    <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:500</p>
+                    <span>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                    </span>
+                </div>
+                  <div class="row-cols-3 center-item">
+                    <div class="input-group number-spinner px-1  py-2">
+                      <button style="border: 1px solid orangered;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                       <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                       <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                       <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        <div class="col-lg-3 p-2">
+          <div class="rounded-3 shadow-lg">
+            <!-- a7***************** -->
+                  <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/spices  plants/s4.jpg' %}" alt="">
+              <div class="text-center">
+                  <h4 class="fw-bolder">Capchicum Tree Plant
+                </h4>
+                  <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:20</p>
+                  <span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </span>
+              </div>
+                <div class="row-cols-3 center-item">
+                  <div class="input-group number-spinner px-1  py-2">
+                    <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                     <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                     <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                     <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+       
+          </div>
+        </div>
+        <div class="col-lg-3 p-2">
+          <div class="rounded-3 shadow-lg">
+            <!-- a8****************** -->
+                  <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/spices  plants/s5.jpg' %}" alt="">
+              <div class="text-center">
+                  <h4 class="fw-bolder">Gol Morich Plant
+                </h4>
+                  <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:700</p>
+                  <span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </span>
+              </div>
+                <div class="row-cols-3 center-item">
+                  <div class="input-group number-spinner px-1  py-2">
+                    <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                     <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                     <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                     <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+       
+          </div>
+        </div>
+        <div class="col-lg-3 p-2">
+          <div class="rounded-3 shadow-lg">
+            <!-- a8****************** -->
+                  <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/spices  plants/s6.jpg' %}" alt="">
+              <div class="text-center">
+                  <h4 class="fw-bolder">Jaifal Tree Plant
+
+                </h4>
+                  <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:400</p>
+                  <span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </span>
+              </div>
+                <div class="row-cols-3 center-item">
+                  <div class="input-group number-spinner px-1  py-2">
+                    <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                     <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                     <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                     <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+       
+          </div>
+        </div>
+        <div class="col-lg-3 p-2">
+          <div class="rounded-3 shadow-lg">
+            <!-- a8****************** -->
+                  <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/spices  plants/s7.jpg' %}" alt="">
+              <div class="text-center"> 
+                  <h4 class="fw-bolder">Kaju Badam Plant
+
+                </h4>
+                  <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:300</p>
+                  <span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </span>
+              </div>
+                <div class="row-cols-3 center-item">
+                  <div class="input-group number-spinner px-1  py-2">
+                    <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                     <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                     <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                     <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+       
+          </div>
+        </div>
+        <div class="col-lg-3 p-2">
+          <div class="rounded-3 shadow-lg">
+            <!-- a8****************** -->
+                  <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/spices  plants/s8.jpg' %}" alt="">
+              <div class="text-center">
+                  <h4 class="fw-bolder">Polaw Leaf
+
+                </h4>
+                  <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:50</p>
+                  <span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </span>
+              </div>
+                <div class="row-cols-3 center-item">
+                  <div class="input-group number-spinner px-1  py-2">
+                    <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                     <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                     <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                     <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+       
+          </div>
+        </div>
+      </div>
+      <div class="row gx-2">
+        <div class="col-lg-3 p-2">
+            <div class="rounded-3 shadow-lg">
+              <!-- a8****************** -->
+                    <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/spices  plants/s9.jpg' %}" alt="">
+                <div class="text-center">
+                    <h4 class="fw-bolder">TejpataPlant
+
+                  </h4>
+                    <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:350</p>
+                    <span>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="far fa-star text-warning"></i>
+                      <i class="far fa-star text-warning"></i>
+                    </span>
+                </div>
+                  <div class="row-cols-3 center-item">
+                    <div class="input-group number-spinner px-1  py-2">
+                      <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                       <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                       <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                       <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                    </div>
+                  </div>
+         
+            </div>
+          </div>
+          <div class="col-lg-3 p-2">
+            <div class="rounded-3 shadow-lg">
+              <!-- a8****************** -->
+                    <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/spices  plants/s10.jpg' %}" alt="">
+                <div class="text-center">
+                    <h4 class="fw-bolder">White Elach Plant
+  
+                  </h4>
+                    <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:1200</p>
+                    <span>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="far fa-star text-warning"></i>
+                      <i class="far fa-star text-warning"></i>
+                    </span>
+                </div>
+                  <div class="row-cols-3 center-item">
+                    <div class="input-group number-spinner px-1  py-2">
+                      <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                       <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                       <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                       <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                    </div>
+                  </div>
+         
+            </div>
+          </div>
+          <div class="col-lg-3 p-2">
+            <div class="rounded-3 shadow-lg">
+              <!-- a8****************** -->
+                    <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/spices  plants/s11.jpg' %}" alt="">
+                <div class="text-center">
+                    <h4 class="fw-bolder">Lobongo Tree Plant
+  
+                  </h4>
+                    <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:600</p>
+                    <span>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="far fa-star text-warning"></i>
+                      <i class="far fa-star text-warning"></i>
+                    </span>
+                </div>
+                  <div class="row-cols-3 center-item">
+                    <div class="input-group number-spinner px-1  py-2">
+                      <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                       <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                       <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                       <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                    </div>
+                  </div>
+         
+            </div>
+          </div>
+          <div class="col-lg-3 p-2">
+            <div class="rounded-3 shadow-lg">
+              <!-- a8****************** -->
+                    <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/spices  plants/s12.jpg' %}" alt="">
+                <div class="text-center">
+                    <h4 class="fw-bolder">Pista Badam Plant
+  
+                  </h4>
+                    <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:400</p>
+                    <span>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="far fa-star text-warning"></i>
+                      <i class="far fa-star text-warning"></i>
+                    </span>
+                </div>
+                  <div class="row-cols-3 center-item">
+                    <div class="input-group number-spinner px-1  py-2">
+                      <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                       <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                       <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                       <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                    </div>
+                  </div>
+         
+            </div>
+          </div>
+      <!-- 2div*** -->
+    </div>
+    </div>
+    <div class="container m-5 bg-light">
+        <h2 class=" text-danger text-center fw-bold fst-italic mb-4 text-decoration-underline">How to grow Spices plants at Home?</h2>
+        <div class="row bg-white">
+            <div class="col-lg-4 border-2 bg-light " style="border: 1px solid burlywood;border-radius: 10px; padding: 10px; ">
+                <div>
+                    <h3 class="text-center fw-bold fst-italic">Perennial Spices</h3>
+                    <small>Perennial spices such as cardamom, vanilla, cinnamon, and peppercorns require a long-term commitment to care. Yet for those of us who don’t live in a tropical climate, they are also fantastic teachers that can help us learn to create our own microclimates for growing plants outside their native habitat. Plus, you can keep them indoors part, or all of the year, to add stunning beauty to your indoor home space.</small>
+                   
+                    
+                </div>
+            </div>
+            <div class="col-lg-4 border-2 bg-white" style="border: 1px solid burlywood;border-radius: 10px;;">
+                <div>
+                    <h3 class="text-center fw-bold fst-italic">Seed Spices</h3>
+                    <small class="px-2">Seed spices like dill, fennel, fenugreek, nigella, cumin, sesame, mustard, and caraway are excellent for boosting overall crop production and learning seed saving skills.
+                     Seed spices must flower to produce abundant seeds. Those flowers are not only critical to spice production but also perfect for attracting beneficial pollinators to your garden.
+                    The more pollinators you attract, the more fruitful your other pollinator-dependent plants like cucumbers, squash, apples, peaches, etc. will be.
+                    Also, growing and harvesting seed spices employs the same basic skills as saving seeds to plant in the garden. You must plan for pollination, identify the perfect time to harvest, and store those spices like you would heirloom and open pollinated garden seeds.
+                    Once you know how to grow and harvest seed spices, you’ll be ready to save seeds for your vegetables too. </small>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 border-2  bg-light" style="border: 1px solid burlywood;border-radius: 10px; ">
+                <div>
+                    <h3 class="text-center fw-bold fst-italic">Underground Spices</h3>
+                    <small>Growing spices like ginger, turmeric, garlic, wasabi, and horseradish for their harvestable underground parts is also a great gateway to expand your understanding of soil amendments and good watering practices.
+                    Spices harvested for their rhizomes, roots, enlarged stems, and bulbs require deeper, more fertile soil than many of the shallow-rooted annuals grown in a typical vegetable garden.
+                    To achieve that kind of soil, you must become skilled at making soilless potting mixes or amending your native soil with aged compost and other aerators like leaf mold or coconut coir to promote drainage. You will also need to maintain soil fertility using liquid fertilizers like homemade compost tea to get the best yields. By trading the habit of watering shallow soil daily, for watering fertile soil deeply and only as needed, you drive roots, organic matter, and soil life further underground where it’s easier for nutrients and moisture to remain stable and available to plants. Also, plants with deeper roots are naturally more drought and disease resistant.
+
+                    Practicing these skills while growing underground spices, then applying them to your other crops, can dramatically improve your yields throughout your vegetable garden
+                </small>
+                    
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+       
+
+{% endblock %}

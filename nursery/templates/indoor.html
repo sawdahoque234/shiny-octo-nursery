@@ -1,0 +1,451 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content%}
+{% include 'navigation.html'%}
+
+<style>
+  .a:hover{
+      color: white !important;
+      background-color: rgba(230, 8, 8, 0.472);
+      outline: none;
+    }
+    
+    </style>
+<div class="container  bg-light mb-2">
+    
+    <h3 class="text-center fw-bold text-uppercase text-success py-3">Indoor Plants</h3>
+    <div class="container">
+        <div class="row mb-3">
+          <div class="col-lg-3">
+            <div class=" border bg-white shadow-lg">
+              <img src="{% static 'img/plants/indoor plants/i1.jpg' %}" class="img-fluid d-block mx-auto py-2" alt="">
+              <h5 class="text-center text-dark ">Cacti</h5>
+              <h5 class="text-center text-danger">Price:450.0</h5>
+              <p class="text-center">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+              </p>
+              <div class="row-cols-lg-6 center-item">
+                <div class="input-group">
+                  <button style="border: 2px solid burlywood;" class="btn mx-1   text-dark ">Add to Cart</Button>
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus "></i></button>
+
+                 <input id="case-number" type="number" min="0" class=" form-control text-center" value="0">
+                    
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class=" border bg-white shadow-lg">
+              <img src="{% static 'img/plants/indoor plants/i2.jpg' %}" class="img-fluid d-block mx-auto py-2" alt="">
+              <h5 class="text-center text-dark ">Fiddle Leaf</h5>
+              <h5 class="text-center text-danger">Price:750.0</h5>
+              <p class="text-center">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+              </p>
+              <div class="row-cols-lg-6 center-item">
+                <div class="input-group">
+                  <button style="border: 2px solid burlywood;" class="btn mx-1   text-dark ">Add to Cart</Button>
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus "></i></button>
+
+                 <input id="case-number" type="number" min="0" class=" form-control text-center" value="0">
+                    
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class=" border bg-white shadow-lg">
+              <img src="{% static 'img/plants/indoor plants/i3.jpg' %}" class="img-fluid d-block mx-auto py-2" alt="">
+
+              <h5 class="text-center text-dark ">Gardenia</h5>
+              <h5 class="text-center text-danger">Price:400.0</h5>
+
+              <p class="text-center">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+              </p>
+              <div class="row-cols-lg-6 center-item">
+                <div class="input-group">
+                  <button style="border: 2px solid burlywood;" class="btn mx-1   text-dark ">Add to Cart</Button>
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus "></i></button>
+
+                 <input id="case-number" type="number" min="0" class=" form-control text-center" value="0">
+                    
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class=" border bg-white shadow-lg">
+             
+              <img src="{% static 'img/plants/indoor plants/i13.jpg' %}" class="img-fluid d-block mx-auto py-2" alt="">
+
+              <h5 class="text-center text-dark ">Aloe Plants</h5>
+              <h5 class="text-center text-danger">Price:300.0</h5>
+              <p class="text-center">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+              </p>
+              <div class="row-cols-lg-6 center-item">
+                <div class="input-group">
+                  <button style="border: 2px solid burlywood;" class="btn mx-1   text-dark ">Add to Cart</Button>
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus "></i></button>
+
+                 <input id="case-number" type="number" min="0" class=" form-control text-center" value="0">
+                    
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class=" border bg-white shadow-lg">
+              <img src="{% static 'img/plants/indoor plants/i6.jpg'%}" class="img-fluid d-block mx-auto py-2" alt="">
+              <h5 class="text-center text-dark ">String of Pearls</h5>
+              <h5 class="text-center text-danger">Price:1000.0</h5>
+              <p class="text-center">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="row-cols-lg-6 center-item">
+                <div class="input-group">
+                  <button style="border: 2px solid burlywood;" class="btn mx-1   text-dark ">Add to Cart</Button>
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus "></i></button>
+
+                 <input id="case-number" type="number" min="0" class=" form-control text-center" value="0">
+                    
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class=" border bg-white shadow-lg">
+              <img src="{% static 'img/plants/indoor plants/i7.jpg' %}" class="img-fluid d-block mx-auto py-2" alt="">
+              <h5 class="text-center text-dark ">Kentia Palm</h5>
+              <h5 class="text-center text-danger">Price:550.0</h5>
+              <p class="text-center">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+              </p>
+              <div class="row-cols-lg-6 center-item">
+                <div class="input-group">
+                  <button style="border: 2px solid burlywood;" class="btn mx-1   text-dark ">Add to Cart</Button>
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus "></i></button>
+
+                 <input id="case-number" type="number" min="0" class=" form-control text-center" value="0">
+                    
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class=" border bg-white shadow-lg">
+              <img src="{% static 'img/plants/indoor plants/i8.jpg' %}" class="img-fluid d-block mx-auto py-2" alt="">
+
+              <h5 class="text-center text-dark ">Peace Lily</h5>
+              <h5 class="text-center text-danger">Price:750.0</h5>
+
+              <p class="text-center">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+              </p>
+              <div class="row-cols-lg-6 center-item">
+                <div class="input-group">
+                  <button style="border: 2px solid burlywood;" class="btn mx-1   text-dark ">Add to Cart</Button>
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus "></i></button>
+
+                 <input id="case-number" type="number" min="0" class=" form-control text-center" value="0">
+                    
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class=" border bg-white shadow-lg">
+              <img src="{% static 'img/plants/indoor plants/i9.jpg' %}" class="img-fluid d-block mx-auto py-2" alt="">
+
+              <h5 class="text-center text-dark ">Yucca Cane Plant</h5>
+              <h5 class="text-center text-danger">Price:450.0</h5>
+              <p class="text-center">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+              </p>
+              <div class="row-cols-lg-6 center-item">
+                <div class="input-group">
+                  <button style="border: 2px solid burlywood;" class="btn mx-1   text-dark ">Add to Cart</Button>
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus "></i></button>
+
+                 <input id="case-number" type="number" min="0" class=" form-control text-center" value="0">
+                    
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="row my-4">
+              <div class="col-lg-3">
+                  <div class=" border bg-white shadow-lg">
+                    <img src="{% static 'img/plants/indoor plants/i10.jpg' %}" class="img-fluid d-block mx-auto" alt="">
+    
+                    <h5 class="text-center text-dark ">Anthurium</h5>
+                    <h5 class="text-center text-danger">Price:520.0</h5>
+                    <p class="text-center">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="far fa-star text-warning"></i>
+                        <i class="far fa-star text-warning"></i>
+                    </p>
+                    <div class="row-cols-lg-6 center-item">
+                      <div class="input-group">
+                        <button style="border: 2px solid burlywood;" class="btn mx-1  text-dark ">Add to Cart</Button>
+                         <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus "></i></button>
+      
+                       <input id="case-number" type="number" min="0" class=" form-control text-center" value="0">
+                          
+                         <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="col-lg-3">
+                  <div class=" border bg-white shadow-lg">
+                    <img src="{% static 'img/plants/indoor plants/i11.jpg' %}" class="img-fluid d-block mx-auto" alt="">
+    
+                    <h5 class="text-center text-dark ">Asparagus Fern</h5>
+                    <h5 class="text-center text-danger">Price:400.0</h5>
+                    <p class="text-center">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="far fa-star text-warning"></i>
+                        <i class="far fa-star text-warning"></i>
+                        <i class="far fa-star text-warning"></i>
+                    </p>
+                    <div class="row-cols-lg-6 center-item">
+                      <div class="input-group">
+                        <button style="border: 2px solid burlywood;" class="btn mx-1   text-dark ">Add to Cart</Button>
+                         <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus "></i></button>
+      
+                       <input id="case-number" type="number" min="0" class=" form-control text-center" value="0">
+                          
+                         <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-3">
+                  <div class=" border bg-white shadow-lg">
+                    <img src="{% static 'img/plants/indoor plants/i12.jpg' %}" class="img-fluid d-block mx-auto" alt="">
+    
+                    <h5 class="text-center text-dark ">Sweatheart Plant</h5>
+                    <h5 class="text-center text-danger">Price:520.0</h5>
+                    <p class="text-center">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="far fa-star text-warning"></i>
+                    </p>
+                    <div class="row-cols-lg-6 center-item">
+                      <div class="input-group">
+                        <button style="border: 2px solid burlywood;" class="btn mx-1   text-dark ">Add to Cart</Button>
+                         <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus "></i></button>
+      
+                       <input id="case-number" type="number" min="0" class=" form-control text-center" value="0">
+                          
+                         <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="col-lg-3">
+                  <div class=" border bg-white shadow-lg">
+                    <img src="{% static 'img/plants/indoor plants/i5.jpg ' %}" class="img-fluid d-block mx-auto" alt="">
+    
+                    <h5 class="text-center text-dark ">Bird of Paradise</h5>
+                    <h5 class="text-center text-danger">Price:700.0</h5>
+                    <p class="text-center">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="far fa-star text-warning"></i>
+                        <i class="far fa-star text-warning"></i>
+                    </p>
+                    <div class="row-cols-lg-6 center-item">
+                      <div class="input-group">
+                        <button style="border: 2px solid burlywood;" class="btn mx-1   text-dark ">Add to Cart</Button>
+                         <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus "></i></button>
+      
+                       <input id="case-number" type="number" min="0" class=" form-control text-center" value="0">
+                          
+                         <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+                <div class="col-lg-3">
+                  <div class=" border bg-white shadow-lg">
+                    
+                    <img src="{% static 'img/plants/indoor plants/i4.jpg' %}" class="img-fluid d-block mx-auto " alt="">
+    
+                    <h5 class="text-center text-dark ">Calatheas</h5>
+                    <h5 class="text-center text-danger">Price:200.0</h5>
+                    <p class="text-center">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="far fa-star text-warning"></i>
+                        <i class="far fa-star text-warning"></i>
+                    </p>
+                    <div class="row-cols-lg-6 center-item">
+                      <div class="input-group">
+                        <button style="border: 2px solid burlywood;" class="btn mx-1   text-dark ">Add to Cart</Button>
+                         <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus "></i></button>
+      
+                       <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                          
+                         <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+    <!-- **************************ses****************** -->
+    <div class="container p-3 h-25 bg-light">
+        <div class="row mb-3 ">
+          <div class="col-lg-6 border-3    shadow-lg">
+                  <div class=" mx-auto  bg-light fst-italic px-3 py-2">
+                  <h2 class=" text-danger fst-italic mb-4">How to take care of indoor plants?</h2>
+                    <h5 class=" px-3 py-2 ">1.Water plants regularly. </h5>
+                    <h5 class=" px-3 py-2 ">2.Check the soil moisture.</h5>
+                    <h5 class=" px-3 py-2 ">3.Pour water at room temperature.</h5>
+                    <h5 class=" px-3 py-2 ">4.Give some sunlight or artificial light to plants.</h5>
+                    <h5 class=" px-3 py-2 ">5.Use humidifier to maintain surroundings.</h5>
+                    <h5 class=" px-3 py-2 ">6.Add fertilizers to the pot to provide nutrients to plant.</h5>
+                    <h5 class=" px-3 py-2 ">7.Prune your plant regularly.</h5>
+                    <h5 class=" px-3 py-2 ">8.Keep foliage clean.</h5>
+                    <h5 class=" px-3 py-2 ">9.Choose the right container.</h5>
+                    <h5 class=" px-3 py-2 ">10.Increase humidity and prevent drafts.</h5>
+                  </div>
+            </div>
+            <div class="col-lg-6 h-25">
+                <div class="h-25 bg-white">
+                    <img src="{% static 'img/plants/indoor plants/care.jpg' %}" class="mx-auto d-block img-fluid w-75 h-25"  alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-lg-6 bg-white border-3 rounded-3 ">
+              <div>
+                  <img src="{% static 'img/plants/indoor plants/qssn.jpg' %}" class="mx-auto d-block img-fluid w-75 h-25" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6 border-3 rounded-3 shadow-lg" >
+              <div class="text-center mx-auto   bg-white  p-3 ">
+                  <h2 class=" text-success fst-italic p-3" style="border: 1px solid green; border-radius: 10px;">Frequently Asked questions</h2>
+              </div>
+              <div>
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                      <div class="accordion-item  ">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              What is the best fertilizer for indoor plants?
+
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Miracle-Gro Plant Food (Liquid), Feeds Indoor Houseplants. ...
+                              Espoma Company Organic Indoor Plant Food. ...
+                              Organic Liquid Seaweed and Kelp Fertilizer. ...
+                              Osmocote Smart-Release Plant Food Plus Outdoor & Indoor. ...
+                              Miracle-Gro Water Soluble Plant Food.
+                              .</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              How can I make my indoor plants grow faster?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                              You can help your houseplants grow faster by adding essential nutrients to the potting soil with either an organic or inorganic fertilizer. Plants are relatively self-sufficient if provided light, water, and preferred climate. But, your houseplants will excel when fed the right nutrients.</div>
+                          </div>
+                        </div>
+                      <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              What is the fastest growing indoor plant?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                          Fast-Growing Houseplants. Pothos is an extremely fast-growing vine that has the added bonus of being easy to grow. If you give your pothos (also known as Devil's Ivy) good growing conditions, it can grow substantially in just a few weeks..</div>
+                          </div>
+                        </div>
+                      <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Is fertilizer necessary for indoor plants?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                             
+                          Too many people overlook the importance of fertilizing indoor plants. However, proper feedings are essential to grow healthy, beautiful plants. ... Think of fertilizer as the second half of your potting soil. When potting soil is fresh, your plants won't need much, if any, fertilizer</div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

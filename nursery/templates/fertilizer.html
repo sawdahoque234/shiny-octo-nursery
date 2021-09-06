@@ -1,0 +1,425 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+{% include 'navigation.html'%}
+<style>
+    .img-fluid{
+      height: 180px !important;
+      width: auto;
+    }
+    </style>
+<div class="container bg-light mb-2">
+    <h3 class="text-center fw-bold text-uppercase text-danger py-3 fst-italic">Fertilizer</h3>
+ 
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col-lg-3">
+            <div class=" border bg-white shadow-lg">
+              <img src="{% static 'img/ferti/fz1.jpg' %}" class="img-fluid d-block mx-auto" alt="">
+              <h5 class="text-center text-dark ">Vermi Compost</h5>
+              <h5 class="text-center text-danger">Price:150.0</h5>
+              <p class="text-center">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+              </p>
+              <div class="row-cols-lg-6 center-item">
+                <div class="input-group">
+                  <button style="border: 2px solid burlywood;" class="btn mx-1   text-dark ">Add to Cart</Button>
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus "></i></button>
+
+                 <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                    
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class=" border bg-white shadow-lg">
+              <img src="{% static 'img/ferti/fz2.jpg' %}" class="img-fluid d-block mx-auto" alt="">
+              <h5 class="text-center text-dark ">Bone Meal</h5>
+              <h5 class="text-center text-danger">Price:150.0</h5>
+              <p class="text-center">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+              </p>
+              <div class="row-cols-lg-6 center-item">
+                <div class="input-group">
+                  <button style="border: 2px solid burlywood;" class="btn mx-1   text-dark ">Add to Cart</Button>
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus "></i></button>
+
+                 <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                    
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class=" border bg-white shadow-lg">
+              <img src="{% static 'img/ferti/fz3.jpeg' %}" class="img-fluid d-block mx-auto" alt="">
+
+              <h5 class="text-center text-dark ">Manure</h5>
+              <h5 class="text-center text-danger">Price:100.0</h5>
+
+              <p class="text-center">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+              </p>
+              <div class="row-cols-lg-6 center-item">
+                <div class="input-group">
+                  <button style="border: 2px solid burlywood;" class="btn mx-1   text-dark ">Add to Cart</Button>
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus "></i></button>
+
+                 <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                    
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class=" border bg-white shadow-lg">
+              <img src="{% static 'img/ferti/fz4.jpg' %}" class="img-fluid d-block mx-auto" alt="">
+
+              <h5 class="text-center text-dark ">Rock Phosphate</h5>
+              <h5 class="text-center text-danger">Price:300.0</h5>
+              <p class="text-center">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+              </p>
+              <div class="row-cols-lg-6 center-item">
+                <div class="input-group">
+                  <button style="border: 2px solid burlywood;" class="btn mx-1   text-dark ">Add to Cart</Button>
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus "></i></button>
+
+                 <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                    
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class=" border bg-white shadow-lg">
+              <img src="{% static 'img/ferti/fz5.jpg' %}" class="img-fluid d-block mx-auto py-2" alt="">
+              <h5 class="text-center text-dark ">Fish Fertilizer</h5>
+              <h5 class="text-center text-danger">Price:350.0</h5>
+              <p class="text-center">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+              </p>
+              <div class="row-cols-lg-6 center-item">
+                <div class="input-group">
+                  <button style="border: 2px solid burlywood;" class="btn mx-1   text-dark ">Add to Cart</Button>
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus "></i></button>
+
+                 <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                    
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class=" border bg-white shadow-lg">
+              <img src="{% static 'img/ferti/fz6.jpg' %}" class="img-fluid d-block mx-auto py-2" alt="">
+              <h5 class="text-center text-dark ">Cottenseed Meal</h5>
+              <h5 class="text-center text-danger">Price:250.0</h5>
+              <p class="text-center">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+              </p>
+              <div class="row-cols-lg-6 center-item">
+                <div class="input-group">
+                  <button style="border: 2px solid burlywood;" class="btn mx-1   text-dark ">Add to Cart</Button>
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus "></i></button>
+
+                 <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                    
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class=" border bg-white shadow-lg">
+              <img src="{% static 'img/ferti/fz7.jpeg' %}" class="img-fluid d-block mx-auto" alt="">
+
+              <h5 class="text-center text-dark ">Blood Meal</h5>
+              <h5 class="text-center text-danger">Price:240.0</h5>
+
+              <p class="text-center">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+              </p>
+              <div class="row-cols-lg-6 center-item">
+                <div class="input-group">
+                  <button style="border: 2px solid burlywood;" class="btn mx-1   text-dark ">Add to Cart</Button>
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus "></i></button>
+
+                 <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                    
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class=" border bg-white shadow-lg">
+              <img src="{% static 'img/ferti/fz8.jpg' %}" class="img-fluid d-block mx-auto" alt="">
+
+              <h5 class="text-center text-dark ">Feathear Meal</h5>
+              <h5 class="text-center text-danger">Price:300.0</h5>
+              <p class="text-center">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+              </p>
+              <div class="row-cols-lg-6 center-item">
+                <div class="input-group">
+                  <button style="border: 2px solid burlywood;" class="btn mx-1   text-dark ">Add to Cart</Button>
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus "></i></button>
+
+                 <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                    
+                   <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row my-4">
+              <div class="col-lg-3">
+                  <div class=" border bg-white shadow-lg">
+                    <img src="{% static 'img/ferti/fz10.jpeg' %}" class="img-fluid d-block mx-auto" alt="">
+    
+                    <h5 class="text-center text-dark ">Alfalfa Meal</h5>
+                    <h5 class="text-center text-danger">Price:320.0</h5>
+                    <p class="text-center">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="far fa-star text-warning"></i>
+                    </p>
+                    <div class="row-cols-lg-6 center-item">
+                      <div class="input-group">
+                        <button style="border: 2px solid burlywood;" class="btn mx-1   text-dark ">Add to Cart</Button>
+                         <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus "></i></button>
+      
+                       <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                          
+                         <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="col-lg-3">
+                  <div class=" border bg-white shadow-lg">
+                    <img src="{% static 'img/ferti/fz9.jpg' %}" class="img-fluid d-block mx-auto" alt="">
+    
+                    <h5 class="text-center text-dark ">Liquid Kelp</h5>
+                    <h5 class="text-center text-danger">Price:400.0</h5>
+                    <p class="text-center">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="far fa-star text-warning"></i>
+                        <i class="far fa-star text-warning"></i>
+                    </p>
+                    <div class="row-cols-lg-6 center-item">
+                      <div class="input-group">
+                        <button style="border: 2px solid burlywood;" class="btn mx-1   text-dark ">Add to Cart</Button>
+                         <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-minus "></i></button>
+      
+                       <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                          
+                         <button id="case-plus"  class="btn btn-secondary px-1"><i class="fas fa-plus"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+    </div>
+<!-- ***************************************ses********************************* -->
+<div class="container py-3 bg-secondary rounded-3">
+  <h2 class="text-center text-danger w-50 mx-auto d-block bg-white fw-bold text-uppercase text-decoration-underline py-2 rounded-3 fst-italic">Uses Of This Fertilizer</h2>
+  <div class="container">
+        <div class=" border-3 mb-3 shadow-lg bg-white  p-3 border-2 rounded-3">
+          <h3 class="text-center text-success fw-bold">Vermi Compost</h3>
+          <small >Both commercially produced compost and homemade compost benefit soil by adding organic matter, providing food for beneficial microbial life, increasing the soil’s water-holding capacity and gradually releasing plant nutrients. Composts made with high amounts of manure or biosolids (sewage sludge) may be high in salts and can burn plants, but composts made with primarily plant residues do not generally contain troublesome amounts of salt. A typical N-P-K ratio for compost is 2-1-1, though its exact nutritional content depends on many factors. Compost that smells like ammonia or is not yet fully decomposed should be allowed to finish breaking down to avoid damaging plants. Compost also contains many micronutrients essential for plant growth.</small>
+      </div>
+      <div class=" border-3 mb-3 shadow-lg bg-light mx-auto d-block p-3 border-2 rounded-3">
+
+          <h3 class="text-center text-warning fw-bold">Bone Meal</h3>
+          <small>A byproduct of slaughtering facilities, bone meal is created through the steam processing and pulverization of animal bones. Bone meal is an excellent high-phosphorus fertilizer with an average N-P-K ratio of 3-15-0. The phosphorous in bone meal takes a few months to become available to plants via microbial processes in the soil. It also contains calcium, another essential plant nutrient. Phosphorous is most available in soil with pH between 6.0 and 7.0, so be sure to test and adjust soil pH if necessary</small>
+      </div>
+      <div class=" border-3 mb-3 shadow-lg bg-white mx-auto d-block p-3 border-2 rounded-3">
+
+          <h3 class="text-center text-warning fw-bold">Manure</h3>
+          <small>The nutrient content of manure is dependent on many factors, including its age, source and the presence of bedding materials. Because of potential pathogen exposure, raw manure should be avoided. Manure should be a minimum of 180 days old or fully composted before it’s added to growing areas. In addition to containing macronutrients, manure is also a great source of several trace nutrients essential for plant growth.
+          Most cattle and horse manures have an average N-P-K ratio of 1-0.5-0.5 while poultry manures tend to be better high-nitrogen fertilizers (3-1-1 on average). The nutrients in manure are not immediately available to plants and can take up to several years to be released by soil microbes. In general, about half of the total nitrogen is available the first year, with the rest being released slowly over several subsequent seasons. Manure is also an excellent source of organic matter but can contain weed seeds.</small>
+      </div>
+      <div class=" border-3 mb-3 shadow-lg bg-white mx-auto d-block p-3 border-2 rounded-3">
+
+          <h3 class="text-center text-success fw-bold">Rock phosphate</h3>
+          <small>A mineral rock powder, rock phosphate is an excellent source of phosphorous, with an N-P-K ratio of 0-2-0. The phosphorous contained in rock phosphate becomes more available the second year after application, and phosphorous is most available within the soil when the pH ranges between 6.0 and 7.0. Be sure to test soil pH before adding rock phosphate. It is also a good source of calcium.</small>
+      </div>
+      <div class=" border-3 mb-3 shadow-lg bg-white mx-auto d-block p-3 border-2 rounded-3">
+
+          <h3 class="text-center text-warning fw-bold">Fish emulsion and hydrolyzed liquid fish</h3>
+          <small>Processing fish or fish byproducts with heat or acid treatments creates fish emulsion. Fish emulsion is generally a pretty stinky fertilizer, but it’s a good source of all three macronutrients—nitrogen, phosphorus and potassium—with an N-P-K (nitrogen-phosphorus-potassium) ratio of 5-2-2.
+          Hydrolyzed liquid fish fertilizers are created using enzymes rather than heat. The resulting product is not smelly and retains more trace nutrients and vitamins. The average N-P-K ratio for hydrolyzed fish fertilizers is 4-2-2.</small>
+      </div>
+      <div class=" border-3 mb-3 shadow-lg bg-white mx-auto d-block p-3 border-2 rounded-3">
+
+          <h3 class="text-center text-warning fw-bold">Cottonseed meal
+          </h3>
+          <small>Cottonseed meal is a high-nitrogen fertilizer with an average N-P-K ratio of 6-0.4-1.5. It takes several months to be processed by soil microbes and broken down so that it can release the nutrients it contains. Organic farmers should seek out organic cottonseed meal because cotton is often a genetically modified crop and many pesticides are used during its growth.</small>
+      </div>
+      <div class=" border-3 mb-3 shadow-lg bg-white mx-auto d-block p-3 border-2 rounded-3">
+
+          <h3 class="text-center text-success fw-bold">Blood meal
+          </h3>
+          <small>A byproduct of slaughtering facilities, blood meal is a very high-nitrogen fertilizer with an N-P-K ratio of 12-0-0. Because of its high ammonia content, inappropriate use or over-fertilizing could cause burned foliage.</small>
+      </div>
+      <div class=" border-3 mb-3 shadow-lg bg-white mx-auto d-block p-3 border-2 rounded-3">
+
+          <h3 class="text-center text-warning fw-bold">Feature meal
+          </h3>
+          <small>Although it takes four months or longer to break down and release its nutrients, feather meal is a great high-nitrogen fertilizer with an N-P-K ratio between 7-0-0 and 12-0-0. It is a byproduct of poultry processing.</small>
+      </div>
+      <div class=" border-3 mb-3 shadow-lg bg-white mx-auto d-block p-3 border-2 rounded-3">
+          <h3 class="text-center text-warning fw-bold">Alfalfa meal
+
+          </h3>
+          <small>With an average N-P-K ratio of 2-1-2, alfalfa meal provides plants not only with these macronutrients but also many trace nutrients. It takes one to four months to be broken down by the soil microbes and for the nutrients to become available.</small>
+      </div>
+      <div class=" border-3 mb-3 shadow-lg bg-white mx-auto d-block p-3 border-2 rounded-3">
+          <h3 class="text-center text-success fw-bold">Liquid kelp
+          </h3>
+          <small>Although the amounts of nitrogen, phosphorous and potassium contained in liquid kelp are minimal, it is high in essential trace nutrients as well as plant growth hormones that accelerate plant growth and improve flowering. Liquid kelp is created through the cold processing of this ocean plant. It is mixed with water and applied to plants both as a soil drench and a foliar spray. The nutrients it contains are available immediately for plant use.small>
+      </div>
+
+  </div>
+</div>
+<!-- **************************uses ses************* -->
+<div class="container my-3 p-3 ">
+  <div class="row">
+      <div class="col-lg-5 my-3 p-2">
+          <div>
+
+              <img src="{% static 'img/ferti/qsn.jfif' %}" class=" w-100 h-100 mx-auto d-block" alt="">
+          </div>
+      </div>
+      <div class="col-lg-7">
+          <h2 class="text-center text-danger fw-bold fst-italic p-2"style="border: 1px solid red; border-radius: 10px;">Frequently asked questions</h2>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item  ">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                   How can we use fertilizer effectively?
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">In flower beds and borders, broadcast granulated fertilizer by hand and then scratch it into the soil.
+                      Use a mechanical spreader in open areas like lawns.
+                      Always wash fertilizer granules off of foliage.
+                      Activate the granulated fertilizer by watering it in right after applying.
+                      .</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      When should we use fertilizer?
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Fertilizer is most effective when used on plants at their peak growing cycle. This is when the plant is leafing out for deciduous species, flowering, or putting on new growth after leaving the dormant winter stage. The time of year for fertilizing most plants would then be spring.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      What are the 3 most important elements in a fertilizer?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                      Nitrogen, phosphorus and potassium, or NPK, are the “Big 3” primary nutrients in commercial fertilizers</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                      How much fertilizer should you use?
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                      
+                  Use 2 to 3 pounds of fertilizer such as 10-20-10 for every 100 square feet of garden area. Do not use too much fertilizer. This can kill plants. Two cups of most fertilizers will weigh about 1 pound</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Should I fertilize in the morning or evening?
+
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                     
+                  The best time to use pesticides or fertilizer is in the evening or early morning until 8 am. Both the time are perfect because the sun is not working during this time frame. It's the same phenomenon as above. The plants absorb the applied liquid fertilizer or pesticide best in the early morning.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Should I water after fertilizing?
+
+                  </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                     
+                  After grass dries, apply fertilizer. Then lightly water again. This second watering is vitally important, because it washes fertilizer off grass blades and into soil. You can also time fertilizer application between rainfalls to let rain wash fertilizer into soil</div>
+                </div>
+              </div>
+            </div>
+      </div>
+  </div>
+</div>
+
+
+{% endblock%}

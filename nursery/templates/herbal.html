@@ -1,0 +1,402 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content%}
+{% include 'navigation.html'%}
+<style>
+    .a:hover{
+      color: white !important;
+      background-color: rgba(230, 108, 8, 0.835);
+      outline: none;
+    }
+    .img-fluid{
+      height: 200px !important;
+      width: auto;
+    }
+  </style>
+
+<div class="container">
+    <h2 class="text-center mxx-auto m-3 fw-bolder text-success text-uppercase">Herbal Plants</h2>
+    <div class="container mb-5 py-3 bg-light">
+      <div class="row gx-2 mb-3">
+        <div class="col-lg-3 p-2">
+          <div class="rounded-3 shadow-lg">
+                  <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/herbal plant/h1.jpg' %}" alt="">
+              <div class="text-center">
+                  <h4 class="fw-bolder">Agar Tree Plant
+                </h4>
+                  <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:300</p>
+                  <span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </span>
+              </div>
+                <div class="row-cols-3 center-item">
+                  <div class="input-group number-spinner px-1  py-2">
+                    <button style="border: 1px solid orangered;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                     <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                     <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                     <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-2" >
+          <div class="rounded-3 shadow-lg">
+            <!-- a2 -->
+              <img class="img-fluid rounded-3 w-100 border-3 p-4" src="{% static 'img/plants/herbal plant/h2.jpg' %}"  alt="">
+              <div class="text-center">
+                  <h4 class="fw-bolder">Arjun Tree Plant
+                </h4>
+                  <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:250</p>
+                  <span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                  </span>
+              </div>
+                <div class="row-cols-3 center-item">
+                  <div class="input-group number-spinner px-1  py-2">
+                    <button style="border: 1px solid orangered;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                     <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                     <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                     <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-2" >
+            <div class="rounded-3 shadow-lg">
+              <!-- a2 -->
+                <img class="img-fluid rounded-3 w-100 border-3 p-4" src="{% static 'img/plants/herbal plant/h3.jpg' %}"  alt="">
+                <div class="text-center">
+                    <h4 class="fw-bolder">Ashwagandha  Plant
+
+                  </h4>
+                    <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:300</p>
+                    <span>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                    </span>
+                </div>
+                  <div class="row-cols-3 center-item">
+                    <div class="input-group number-spinner px-1  py-2">
+                      <button style="border: 1px solid orangered;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                       <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                       <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                       <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        <div class="col-lg-3 p-2">
+          <div class="rounded-3 shadow-lg">
+            <!-- a7***************** -->
+                  <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/herbal plant/h4.jpg' %}" alt="">
+              <div class="text-center">
+                  <h4 class="fw-bolder">Bahera Tree Plant
+                </h4>
+                  <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:300</p>
+                  <span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </span>
+              </div>
+                <div class="row-cols-3 center-item">
+                  <div class="input-group number-spinner px-1  py-2">
+                    <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                     <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                     <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                     <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+       
+          </div>
+        </div>
+        <div class="col-lg-3 p-2">
+          <div class="rounded-3 shadow-lg">
+            <!-- a8****************** -->
+                  <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/herbal plant/h5.jpg' %}" alt="">
+              <div class="text-center">
+                  <h4 class="fw-bolder">Choi Jhal Plant
+                </h4>
+                  <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:200</p>
+                  <span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </span>
+              </div>
+                <div class="row-cols-3 center-item">
+                  <div class="input-group number-spinner px-1  py-2">
+                    <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                     <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                     <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                     <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+       
+          </div>
+        </div>
+        <div class="col-lg-3 p-2">
+          <div class="rounded-3 shadow-lg">
+            <!-- a8****************** -->
+                  <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/herbal plant/h6.jpg' %}" alt="">
+              <div class="text-center">
+                  <h4 class="fw-bolder">Diabetes Plant-Gynura
+
+                </h4>
+                  <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:200</p>
+                  <span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </span>
+              </div>
+                <div class="row-cols-3 center-item">
+                  <div class="input-group number-spinner px-1  py-2">
+                    <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                     <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                     <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                     <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+       
+          </div>
+        </div>
+        <div class="col-lg-3 p-2">
+          <div class="rounded-3 shadow-lg">
+            <!-- a8****************** -->
+                  <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/herbal plant/h7.jpg' %}" alt="">
+              <div class="text-center">
+                  <h4 class="fw-bolder">Dudh Sor Tree Plant
+
+                </h4>
+                  <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:500</p>
+                  <span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </span>
+              </div>
+                <div class="row-cols-3 center-item">
+                  <div class="input-group number-spinner px-1  py-2">
+                    <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                     <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                     <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                     <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+       
+          </div>
+        </div>
+        <div class="col-lg-3 p-2">
+          <div class="rounded-3 shadow-lg">
+            <!-- a8****************** -->
+                  <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/herbal plant/h8.jpg' %}" alt="">
+              <div class="text-center">
+                  <h4 class="fw-bolder">Mehedi Tree Plant
+
+                </h4>
+                  <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:50</p>
+                  <span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </span>
+              </div>
+                <div class="row-cols-3 center-item">
+                  <div class="input-group number-spinner px-1  py-2">
+                    <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                     <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                     <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                     <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+       
+          </div>
+        </div>
+      </div>
+      <div class="row gx-2">
+        <div class="col-lg-3 p-2">
+            <div class="rounded-3 shadow-lg">
+              <!-- a8****************** -->
+                    <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/herbal plant/h9.jpg' %}" alt="">
+                <div class="text-center">
+                    <h4 class="fw-bolder">Neem Tree Plant
+
+                  </h4>
+                    <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:50</p>
+                    <span>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="far fa-star text-warning"></i>
+                      <i class="far fa-star text-warning"></i>
+                    </span>
+                </div>
+                  <div class="row-cols-3 center-item">
+                    <div class="input-group number-spinner px-1  py-2">
+                      <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                       <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                       <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                       <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                    </div>
+                  </div>
+         
+            </div>
+          </div>
+          <div class="col-lg-3 p-2">
+            <div class="rounded-3 shadow-lg">
+              <!-- a8****************** -->
+                    <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/herbal plant/h10.jpg' %}" alt="">
+                <div class="text-center">
+                    <h4 class="fw-bolder">Tulsi Tree Plant
+  
+                  </h4>
+                    <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:120</p>
+                    <span>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="far fa-star text-warning"></i>
+                      <i class="far fa-star text-warning"></i>
+                    </span>
+                </div>
+                  <div class="row-cols-3 center-item">
+                    <div class="input-group number-spinner px-1  py-2">
+                      <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                       <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                       <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                       <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                    </div>
+                  </div>
+         
+            </div>
+          </div>
+          <div class="col-lg-3 p-2">
+            <div class="rounded-3 shadow-lg">
+              <!-- a8****************** -->
+                    <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/herbal plant/h11.jpg' %}" alt="">
+                <div class="text-center">
+                    <h4 class="fw-bolder">White Palas Tree Plant
+  
+                  </h4>
+                    <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:600</p>
+                    <span>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="far fa-star text-warning"></i>
+                      <i class="far fa-star text-warning"></i>
+                    </span>
+                </div>
+                  <div class="row-cols-3 center-item">
+                    <div class="input-group number-spinner px-1  py-2">
+                      <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                       <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                       <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                       <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                    </div>
+                  </div>
+         
+            </div>
+          </div>
+          <div class="col-lg-3 p-2">
+            <div class="rounded-3 shadow-lg">
+              <!-- a8****************** -->
+                    <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/herbal plant/h12.jpg' %}" alt="">
+                <div class="text-center">
+                    <h4 class="fw-bolder">Yashtimadhu Plant
+  
+                  </h4>
+                    <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:1200</p>
+                    <span>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="far fa-star text-warning"></i>
+                      <i class="far fa-star text-warning"></i>
+                    </span>
+                </div>
+                  <div class="row-cols-3 center-item">
+                    <div class="input-group number-spinner px-1  py-2">
+                      <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                       <button  id="case-minus" class="btn btn-success"><i class="fas fa-minus"></i></button>
+                       <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                       <button id="case-plus"  class="btn btn-success"><i class="fas fa-plus"></i></button>
+                    </div>
+                  </div>
+         
+            </div>
+          </div>
+       
+
+      <!-- 2div*** -->
+    </div>
+    </div>
+    <div class="container mb-5 bg-light">
+        <h2 class=" text-success text-center fst-italic text-decoration-underline py-2">How to take care of Herbal plants?</h2>
+        <div class="row bg-light">
+            <div class="col-lg-3 ">
+                <div class="text-center px-4 py-1 bg-white rounded-3 shadow-lg">
+                    <h4 class="fw-bold fst-italic">Watering</h4>
+                    <small>
+                        Most herbs grow best in well-drained soil and develop their most intense flavor if kept on the dry side. Their water needs depend on soil type, weather conditions, and type of herbs. For example, you'll need to water plants growing in sandy soils more frequently than those in clay. Keep in mind that plants use more water during hot, windy conditions with low humidity than when the weather is cool, humid, and cloudy.
+                   </small>
+        
+                </div>
+        
+            </div>
+            <div class="col-lg-3  ">
+                <div class="text-center px-4 py-3 bg-white rounded-3 shadow-lg">
+                    <h4 class="fw-bold fst-italic">Feeding</h4>
+                    <small>
+                        Herbs that receive high levels of nutrients, particularly nitrogen, produce inferior growth with little flavor or fragrance. For that reason, avoid overfertilizing your herbs. Organic fertilizers, which decompose slowly, and controlled-release  fertilizers are less likely to provide an excess of nutrients at one time. Follow soil test recommendations or label directions to know how much fertilizer to apply.
+                    </small>
+        
+                </div>
+        
+            </div>
+            <div class="col-lg-3 ">
+                <div class="text-center px-4 py-3 bg-white rounded-3 shadow-lg">
+                    <h4 class="fw-bold fst-italic">Pinching</h4>
+                    <small>
+                        The most flavorful and succulent part of herbs is the tender new growth. Keep your herb plants lush and bushy by regularly pinching 2-3 inches off the stem tips. This encourages branching and new growth. If you desire more leaves, pinch off any flowers that form. Stop pinching or pruning woody herbs at least eight weeks before the first frost of fall to give the new growth time to harden off before winter.
+                    </small>
+                </div>
+        
+            </div>
+            <div class="col-lg-3">
+                <div class="text-center px-4 py-1 bg-white rounded-3 shadow-lg">
+                    <h4 class="fw-bold fst-italic">Mulching</h4>
+                    <small>
+                        Prevent weeds from growing in your herbs by using mulch. Organic mulches such as wood chips, cocoa bean shells, or pine needles are good to use. Apply a layer of mulch 2-4 inches deep, but keep it away from the crown of the herb plant. Mulch smothers weeds, prevents most weed seeds from germinating, and those that do grow are easier to pull. In addition, mulch conserves moisture, so you'll need to water less frequently.
+                    </small>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+       
+       
+
+{% endblock%}

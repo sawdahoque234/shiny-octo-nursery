@@ -1,0 +1,220 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+{% include 'navigation.html'%}
+<style>
+    .img-fluid{
+        height: 200px !important;
+        width: auto;
+    }
+</style>
+<div class="container">
+    <h2 class="text-center mxx-auto m-3 fw-bolder text-primary text-uppercase">Foreign Tree Plants</h2>
+    <div class="container mb-5 py-3 bg-light">
+      <div class="row gx-2 mb-3">
+        <div class="col-lg-3 p-2">
+          <div class="rounded-3 shadow-lg">
+                  <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/foreign plants/f1.jpg' %}" alt="">
+              <div class="text-center">
+                  <h4 class="fw-bolder">Black-Locust Tree</h4>
+                  <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:1000</p>
+                  <span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </span>
+              </div>
+                <div class="row-cols-3 center-item">
+                  <div class="input-group number-spinner px-1  py-2">
+                    <button style="border: 1px solid goldenrod;" class="btn p-2  a btn-white text-primary mx-3">Add To Cart </button>
+                     <button  id="case-minus" class="btn btn-secondary"><i class="fas fa-minus"></i></button>
+                     <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                     <button id="case-plus"  class="btn btn-secondary"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-2">
+          <div class="rounded-3 shadow-lg">
+                  <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/foreign plants/f2.jpg' %}" alt="">
+              <div class="text-center">
+                  <h4 class="fw-bolder">Eucalyptus Tree</h4>
+                  <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:1500</p>
+                  <span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </span>
+              </div>
+                <div class="row-cols-3 center-item">
+                  <div class="input-group number-spinner px-1  py-2">
+                    <button style="border: 1px solid goldenrod;" class="btn p-2  a btn-white text-primary mx-3">Add To Cart </button>
+                     <button  id="case-minus" class="btn btn-secondary"><i class="fas fa-minus"></i></button>
+                     <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                     <button id="case-plus"  class="btn btn-secondary"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-2">
+          <div class="rounded-3 shadow-lg">
+                  <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/foreign plants/f3.jpg' %}" alt="">
+              <div class="text-center">
+                  <h4 class="fw-bolder">White-Ash Tree</h4>
+                  <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:2000</p>
+                  <span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </span>
+              </div>
+                <div class="row-cols-3 center-item">
+                  <div class="input-group number-spinner px-1  py-2">
+                    <button style="border: 1px solid goldenrod;" class="btn p-2  a btn-white text-primary mx-3">Add To Cart </button>
+                     <button  id="case-minus" class="btn btn-secondary"><i class="fas fa-minus"></i></button>
+                     <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                     <button id="case-plus"  class="btn btn-secondary"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-2">
+          <div class="rounded-3 shadow-lg">
+                  <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/foreign plants/f4.jpg' %}" alt="">
+              <div class="text-center">
+                  <h4 class="fw-bolder">Hawthorn Tree</h4>
+                  <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:1000</p>
+                  <span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </span>
+              </div>
+                <div class="row-cols-3 center-item">
+                  <div class="input-group number-spinner px-1  py-2">
+                    <button style="border: 1px solid goldenrod;" class="btn p-2  a btn-white text-primary mx-3">Add To Cart </button>
+                     <button  id="case-minus" class="btn btn-secondary"><i class="fas fa-minus"></i></button>
+                     <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                     <button id="case-plus"  class="btn btn-secondary"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+          </div>
+        </div>
+    </div>
+        <!-- row************/ -->
+      <div class="row gx-2 mb-3">
+        <div class="col-lg-3 p-2">
+          <div class="rounded-3 shadow-lg">
+                  <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/foreign plants/f5.jpg' %}" alt="">
+              <div class="text-center">
+                  <h4 class="fw-bolder">Kumquat Tree</h4>
+                  <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:1500</p>
+                  <span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </span>
+              </div>
+                <div class="row-cols-3 center-item">
+                  <div class="input-group number-spinner px-1  py-2">
+                    <button style="border: 1px solid goldenrod;" class="btn p-2  a btn-white text-primary mx-3">Add To Cart </button>
+                     <button  id="case-minus" class="btn btn-secondary"><i class="fas fa-minus"></i></button>
+                     <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                     <button id="case-plus"  class="btn btn-secondary"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-2">
+          <div class="rounded-3 shadow-lg">
+                  <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/foreign plants/f6.jpg' %}" alt="">
+              <div class="text-center">
+                  <h4 class="fw-bolder">Pin Cherry Tree</h4>
+                  <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:500</p>
+                  <span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </span>
+              </div>
+                <div class="row-cols-3 center-item">
+                  <div class="input-group number-spinner px-1  py-2">
+                    <button style="border: 1px solid goldenrod;" class="btn p-2  a btn-white text-primary mx-3">Add To Cart </button>
+                     <button  id="case-minus" class="btn btn-secondary"><i class="fas fa-minus"></i></button>
+                     <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                     <button id="case-plus"  class="btn btn-secondary"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-2">
+          <div class="rounded-3 shadow-lg">
+                  <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/foreign plants/f7.jpg' %}" alt="">
+              <div class="text-center">
+                  <h4 class="fw-bolder">Sugar-MapleTree</h4>
+                  <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:1200</p>
+                  <span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </span>
+              </div>
+                <div class="row-cols-3 center-item">
+                  <div class="input-group number-spinner px-1  py-2">
+                    <button style="border: 1px solid goldenrod;" class="btn p-2  a btn-white text-primary mx-3">Add To Cart </button>
+                     <button  id="case-minus" class="btn btn-secondary"><i class="fas fa-minus"></i></button>
+                     <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                     <button id="case-plus"  class="btn btn-secondary"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-2">
+          <div class="rounded-3 shadow-lg">
+                  <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/plants/foreign plants/f8.jpg' %}" alt="">
+              <div class="text-center">
+                  <h4 class="fw-bolder">Foreign-Tulip Tree</h4>
+                  <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:1000</p>
+                  <span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                  </span>
+              </div>
+                <div class="row-cols-3 center-item">
+                  <div class="input-group number-spinner px-1  py-2">
+                    <button style="border: 1px solid goldenrod;" class="btn p-2  a btn-white text-primary mx-3">Add To Cart </button>
+                     <button  id="case-minus" class="btn btn-secondary"><i class="fas fa-minus"></i></button>
+                     <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                     <button id="case-plus"  class="btn btn-secondary"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+          </div>
+        </div>
+    </div>
+        <!-- row************/ -->
+    </div>
+      <!-- *****con** -->
+    </div>
+    <div class="container">
+        
+    </div>
+
+
+{% endblock%}

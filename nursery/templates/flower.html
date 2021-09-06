@@ -1,0 +1,790 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+{% include 'navigation.html'%}
+<style>
+    .img-fluid{
+      height: 180px !important;
+      width: auto;
+    }
+  </style>
+<div class="container bg-light mb-2">
+    <h2 class="text-center fw-bold text-uppercase py-2">Flower plants</h2>
+      <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 mb-5">
+        <div class="col">
+          <div class=" border bg-white">
+              <img src="{% static 'img/plants/flower plants/f1.jfif'%}" class="img-fluid mx-auto d-block w-100" alt="">
+              <h5 class="text-center text-dark">Merigold Plant</h5>
+              <h5 class="text-center text-danger">Price: 50.0</h5>
+              <p class="text-center">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+              </p>
+              
+              <div class="row-cols-lg-6 center-item">
+                <div class="input-group">
+                  <button style="border: 1px solid orange;" class="btn mx-1  text-dark ">Add to Cart</Button>
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+                 <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                    
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+          </div>
+          <!-- col** -->
+        </div>
+
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/plants/flower plants/f2.jpg' %}" class="img-fluid w-100" alt="">
+            <h5 class="text-center text-dark ">Plumeria White Flower</h5>
+            <h5 class="text-center text-danger">Price: 60.0</h5>
+            <p class="text-center">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+          </p>
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid orange;" class="btn mx-1  text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/plants/flower plants/f3.jpg' %}" class="img-fluid w-100" alt="">
+            <h5 class="text-center text-dark">Double White Rose</h5>
+            <h5 class="text-center text-danger">Price:150.0</h5>
+            <p class="text-center">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+          </p>
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid orange;" class="btn mx-1  text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/plants/flower plants/f4.jpg' %}" class="img-fluid w-100" alt="">
+            <h5 class="text-center text-dark">Plumeria Red Flower</h5>
+            <h5 class="text-center text-danger">Price:80.0</h5>
+            <p class="text-center">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+          </p>
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid orange;" class="btn mx-1  text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/plants/flower plants/f5.jpg' %}" class="img-fluid w-100" alt="">
+            <h5 class="text-center text-dark ">Black Rose</h5>
+            <h5 class="text-center text-danger">Price: 350.0</h5>
+            <p class="text-center">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+          </p>
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid orange;" class="btn mx-1  text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/plants/flower plants/f6.jpg' %}" class="img-fluid w-100" alt="">
+            <h5 class="text-center text-dark ">Sun Flower Plants</h5>
+            <h5 class="text-center text-danger">Price:450.0</h5>
+            <p class="text-center">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+          </p>  
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid orange;" class="btn mx-1  text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/plants/flower plants/f7.jpg' %}" class="img-fluid w-100" alt="">
+            <h5 class="text-center text-dark ">Red Rose</h5>
+            <h5 class="text-center text-danger">Price: 200.0</h5>
+            <p class="text-center">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+          </p>  
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid orange;" class="btn mx-1 text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/plants/flower plants/f8.jfif' %}" class="img-fluid w-100" alt="">
+            <h5 class="text-center text-dark ">Tulip Flower</h5>
+            <h5 class="text-center text-danger">Price: 300.0</h5>
+            <p class="text-center">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+          </p>  
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid orange;" class="btn mx-1  text-danger text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/plants/flower plants/f9.jpg' %}" class="img-fluid w-100" alt="">
+            <h5 class="text-center text-dark ">GondhoRaj</h5>
+            <h5 class="text-center text-danger">Price: 130.0</h5>
+            <p class="text-center">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+          </p>  
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid orange;" class="btn mx-1  text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/plants/flower plants/f10.jfif' %}" class="img-fluid" alt="">
+            <h5 class="text-center text-dark ">Dhalia</h5>
+            <h5 class="text-center text-danger">Price: 130.0</h5>
+            <p class="text-center">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+          </p>  
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid orange;" class="btn mx-1  text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+<!-- ************************2 row ses************** -->
+  <div class="container bg-light mb-2">
+      <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 mb-5">
+        <div class="col">
+          <div class=" border bg-white">
+              <img src="{% static 'img/plants/flower plants/f11.jpg' %}" class="img-fluid w-100" alt="">
+              <h5 class="text-center text-dark">MOrog Flower</h5>
+              <h5 class="text-center text-danger">Price: 30.0</h5>
+              <p class="text-center">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+              </p>  
+              
+              <div class="row-cols-lg-6 center-item">
+                <div class="input-group ">
+                  <button style="border: 1px solid orange;" class="btn mx-1  text-dark ">Add to Cart</Button>
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+                 <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                    
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+          </div>
+          <!-- col** -->
+        </div>
+
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/plants/flower plants/f12.jpg' %}" class="img-fluid w-100" alt="">
+            <h5 class="text-center text-dark ">Bakul Flower</h5>
+            <h5 class="text-center text-danger">Price: 50.0</h5>
+            <p class="text-center">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+          </p>  
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid orange;" class="btn mx-1  text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/plants/flower plants/f13.jpg' %}" class="img-fluid w-100" alt="">
+            <h5 class="text-center text-dark">Ghori Flower</h5>
+            <h5 class="text-center text-danger">Price: 60.0</h5>
+            <p class="text-center">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+          </p>  
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid orange;" class="btn mx-1  text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/plants/flower plants/f14.jpg' %}" class="img-fluid w-100" alt="">
+            <h5 class="text-center text-dark">Hazari Rose</h5>
+            <h5 class="text-center text-danger">Price: 130.0</h5>
+            <p class="text-center">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+          </p>  
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid orange;" class="btn mx-1  text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/plants/flower plants/f15.JPG' %}" class="img-fluid w-100" alt="">
+            <h5 class="text-center text-dark ">Blue Oporajita</h5>
+            <h5 class="text-center text-danger">Price: 260.0</h5>
+            <p class="text-center">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+          </p>  
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid orange;" class="btn mx-1  text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/plants/flower plants/f16.jpg' %}" class="img-fluid w-100" alt="">
+            <h5 class="text-center text-dark ">Rongon Flower</h5>
+            <h5 class="text-center text-danger">Price: 220.0</h5>
+            <p class="text-center">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+          </p>  
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid orange;" class="btn mx-1  text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/plants/flower plants/f17.jpg' %}" class="img-fluid w-100" alt="">
+            <h5 class="text-center text-dark ">Hasne Hena</h5>
+            <h5 class="text-center text-danger">Price: 130.0</h5>
+            <p class="text-center">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+          </p>  
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid orange;" class="btn mx-1 text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/plants/flower plants/f18.jpg' %}" class="img-fluid w-100" alt="">
+            <h5 class="text-center text-dark ">Dorobi Kamini</h5>
+            <h5 class="text-center text-danger">Price: 100.0</h5>
+            <p class="text-center">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+          </p>  
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid orange;" class="btn mx-1  text-danger text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/plants/flower plants/f19.jpg' %}" class="img-fluid" alt="">
+            <h5 class="text-center text-dark ">Plumeria pink</h5>
+            <h5 class="text-center text-danger">Price: 300.0</h5>
+            <p class="text-center">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+          </p>  
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid orange;" class="btn mx-1  text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/plants/flower plants/f20.jpg' %}" class="img-fluid" alt="">
+            <h5 class="text-center text-dark ">Plumeria Yellow</h5>
+            <h5 class="text-center text-danger">Price: 250.0</h5>
+            <p class="text-center">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+          </p>  
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid orange;" class="btn mx-1  text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+
+  <div class="container bg-light mb-2">
+      <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 mb-5">
+        
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/plants/flower plants/f21.png' %}" class="img-fluid w-100" alt="">
+            <h5 class="text-center text-dark ">Yellow Morning</h5>
+            <h5 class="text-center text-danger">Price: 50.0</h5>
+            <p class="text-center">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+          </p>  
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid orange;" class="btn mx-1  text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/plants/flower plants/f22.jpg' %}" class="img-fluid w-100" alt="">
+            <h5 class="text-center text-dark ">Jasmine</h5>
+            <h5 class="text-center text-danger">Price: 30.0</h5>
+            <p class="text-center">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+          </p>  
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid orange;" class="btn mx-1 text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/plants/flower plants/f23.jpg' %}" class="img-fluid w-100" alt="">
+            <h5 class="text-center text-dark ">Joba</h5>
+            <h5 class="text-center text-danger">Price: 50.0</h5>
+            <p class="text-center">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+          </p>  
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid orange;" class="btn mx-1  text-danger text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/plants/flower plants/f24.jfif'%}" class="img-fluid" alt="">
+            <h5 class="text-center text-dark ">Kodom</h5>
+            <h5 class="text-center text-danger">Price: 100.0</h5>
+            <p class="text-center">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+          </p>  
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid orange;" class="btn mx-1  text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class=" border bg-white">
+            <img src="{% static 'img/plants/flower plants/f25.jfif' %}" class="img-fluid" alt="">
+            <h5 class="text-center text-dark ">Camellia</h5>
+            <h5 class="text-center text-danger">Price: 80.0</h5>
+            <p class="text-center">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+              <i class="far fa-star text-warning"></i>
+          </p>  
+            
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 1px solid orange;" class="btn mx-1  text-dark ">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+      <!-- *************************ses**************************************** -->
+      <div class="container bg-white p-3">
+        <div class="row">
+          <h2 class=" text-danger text-center fst-italic fw-bold mb-4">How to take care of Flower plants?</h2>
+          <div class="col-lg-6">
+            <div class=" mx-auto  bg-light fst-italic px-3 py-2">
+              <h5 class="mx-4 px-3 py-2 ">1.Water your flowers regularly
+              </h5>
+              <small>In the summer season, you need to water your flowers at least once every day. Plants lose a lot of water during this season and they can wither or have stunted growth if they are not well watered. The other seasons are pretty cool and wet, and you can water your flowers twice a week.</small>
+              <h5 class="mx-4 px-3 py-2 ">2.
+                Apply appropriate fertilizers.</h5>
+                <small>Garden soils lose fertility with time, subjecting plants to inadequate nutrients. When you notice signs of low soil fertility in your garden, you need to immediately apply appropriate fertilizers to your flowers.</small>
+              <h5 class="mx-4 px-3 py-2 ">3.Remove weeds from your flower garden.</h5>
+              <small>If you are growing flowers in a smaller garden or using pots and vases, you can control weeds by just uprooting them. For a larger garden, you need to use garden tools like a hoe and pick, and you can weed after every week.</small>
+              <h5 class="mx-4 px-3 py-2 ">4.
+                Provide them with enough sunlight.</h5>
+                <small>Sunlight is the source of energy in plants, and so you need to ensure that your flowers are getting enough of it. Some flowers need many hours of sunlight every day while others, like the indoors, need just a few hours. So you need to know the light requirements of your plants in order to provide them with enough light.</small>
+              <h5 class="mx-4 px-3 py-2 ">5.Prevent and control diseases</h5>
+              <small>Like pests, diseases are quite harmful to flowers. Most plant diseases are caused by fungi, bacteria, and viruses. Some diseases that you should be aware of include anthracnose, bacterial leaf spot, ovulinia petal blight, and white rust.</small>
+              <h5 class="mx-4 px-3 py-2 ">6.Protect your flower plants from animals.</h5>
+              <small>Some animals, like the herbivores, can destroy flower gardens by feeding on the foliage. Other animals like dogs and cats can also be destructive on garden plants.
+
+              </small>
+   
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class=" mx-auto  bg-light fst-italic px-3 py-2">
+
+            <h5 class="mx-4 px-3 py-2 ">7.Pinch and prune your plants.</h5>
+            <small>In the world of plant care, pinching is the process of removing stem tips to encourage lateral growth and promote good shape. It is recommended to pinch back your plants to increase branching and promote the formation of more flowers.</small>
+            <h5 class="mx-4 px-3 py-2 ">8.Use clean tools in your flower garden
+            </h5>
+            <small>When it comes to disinfecting your tools, you need first to look for a good disinfectant like chlorine bleach, trisodium phosphates, or isopropyl alcohol. With the disinfectant, you can just wash the tools with the chemical. You can also dip the tools in the chemical for at least five minutes. You may have to use a large container and more disinfectant if you decide to disinfect your tools through dipping</small>
+            <h5 class="mx-4 px-3 py-3">9.Replace the soil
+              .</h5>
+              <small>Soils lose their physical properties with time, lowering their capacity to sustain plant growth. If your garden or potting soil cannot sustain your flowers due to the degradation of its physical properties, you need to replace it</small>
+            <h5 class="mx-4 px-3 py-3 ">10.Deadhead Your Plants.</h5>
+            <small>Deadheading is the process of removing old or dead flower heads from a plant to encourage more blooming. According to my own experience, the process can prolong the blooming period. It can also keep the plants looking tidy.
+              To deadhead your plants, you can use your fingers to remove the old or dead flower heads. If your plants have many heads to remove, you can use a shearing tool to remove them in a short time.</small>
+              <h5 class="mx-4 px-3 py-3 ">11.Stake Your Plants</h5>
+              <small>Staking is done to provide support for plant stems. It involves fixing a stake or rod in the ground and tying a stem on it. It is done on plants with weak stems or where plants are required to grow in a certain direction</small>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- careses******************************* -->
+<div class="container py-2 mb-5">
+<div class="row ">
+  <div class="col-lg-6">
+    <div>
+      <img src="{% static 'img/f5.jfif' %}" class="mx-auto d-block shadow-lg border-3  my-3 py-4 px-3 w-100 h-75" alt="">
+    </div>
+  </div>
+  
+    <div class="col-lg-6 ">
+              <div class="text-center mx-auto   bg-white  p-3 ">
+                  <h2 class=" text-success fst-italic p-3" style="border: 1px solid green; border-radius: 10px;">Frequently Asked questions</h2>
+              </div>
+              <div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Should you water flowers everyday?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        Water daily for the first week to keep the soil moist, but not soggy. After seven days, you can cut back to watering the flowers just a few times per week to encourage deep root growth</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Which Type of Soil is Best?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">This really depends on where you live and if you are gardening in the ground or in pots. Southern California’s soil is heavily clay based, so I would use a soil that would break up the clay so that roots and water can move freely under the ground..</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        What is the most important thing in gardening?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        To simplify it, there are five main things you should focus on when gardening: sun, soil, spacing, water and nutrients. Here are some important tips to tending to your garden this summer. A majority of plants, both flowers and vegetables, require about six hours of sunshine per day.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                       
+
+                  
+                    What month is best to plant flowers?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                      The best time to plant any plant is during the dormant season – in North America, this is usually late fall through early spring. While it's okay to plant during the rest of the year, it will require more maintenance from you in the form of watering, fertilizers, etc</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        
+
+                        What is the least popular flower?
+
+
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        
+                
+                      The corpse flower may have an unattractive olfactory presence, but its rarity makes it quite popular. The plant's flower only blooms for a short time once every two to three years or even once every seven to 10 years. When the pungent plant does flower, it draws a crowd</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                      
+
+                    What is the most fragile flower in your nursery?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                       Jasmine</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      </div>
+</div>
+</div>
+
+{% endblock%}

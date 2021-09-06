@@ -1,0 +1,354 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+{% include 'navigation.html'%}
+<style>
+  .a:hover{
+    color: white !important;
+    background-color: rgba(230, 108, 8, 0.835);
+    outline: none;
+  }
+  .img-fluid{
+    height: 200px !important;
+    width: auto;
+  }
+</style>
+<div class="container">
+  <h2 class="text-center mxx-auto m-3 fw-bolder text-success text-uppercase">Accessories</h2>
+  <div class="container mb-5 py-3 bg-light">
+    <div class="row gx-2 mb-3">
+      <div class="col-lg-3 p-2">
+        <div class="rounded-3 shadow-lg">
+                <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/accessories/a3.jfif' %}" alt="">
+            <div class="text-center">
+                <h4 class="fw-bolder">Garden Hose</h4>
+                <p class="">This is an excellent expandable garden hose that is compact and comes with an assortment of accessories.</p>
+                <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:200</p>
+                <span>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                </span>
+            </div>
+              <div class="row-cols-3 center-item">
+                <div class="input-group number-spinner px-1  py-2">
+                  <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                   <button  id="case-minus" class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+                   <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+        </div>
+      </div>
+      <div class="col-lg-3 p-2" >
+        <div class="rounded-3 shadow-lg">
+          <!-- a2 -->
+            <img class="img-fluid rounded-3 w-100 border-3 p-4" src="{% static 'img/accessories/a2.jfif' %}"  alt="">
+            <div class="text-center">
+                <h4 class="fw-bolder">Flower Pot</h4>
+                <p>Keep your plants safe and stylish with this Flower Pot .This is very strong and wide.You can put flower plants anywhere. </p>
+                <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:50</p>
+                <span>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                </span>
+            </div>
+              <div class="row-cols-3 center-item">
+                <div class="input-group number-spinner px-1  py-2">
+                  <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                   <button  id="case-minus" class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+                   <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+        </div>
+      </div>
+      <div class="col-lg-3 p-2">
+        <div class="rounded-3 shadow-lg">
+          <!-- a3*********** -->
+                <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/accessories/a1.jfif' %}" alt="">
+            <div class="text-center">
+                <h4 class="fw-bolder">Axe</h4>
+                <p>An axe is  used for millennia to shape, split and cut wood, to harvest timber, as a weapon, and as a ceremonial or heraldic symbol </p>
+                <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:300</p>
+                <span>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                </span>
+            </div>
+              <div class="row-cols-3 center-item">
+                <div class="input-group number-spinner px-1  py-2">
+                  <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                   <button  id="case-minus" class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+                   <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+     
+        </div>
+      </div>
+      <div class="col-lg-3 p-2">
+        <div class="rounded-3 shadow-lg">
+          <!-- a4*************** -->
+                <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/accessories/a4.jfif' %}"  alt="" >
+            <div class="text-center">
+                <h4 class="fw-bolder">Fork </h4>
+                <p> It can be used to  create holes for seeds, mix in soil treatment, remove stones and weeds, and soften tough ground. 
+                </p>
+                <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:200</p>
+                <span>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                </span>
+            </div>
+              <div class="row-cols-3 center-item">
+                <div class="input-group number-spinner px-1  py-2">
+                  <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                   <button  id="case-minus" class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+                   <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+     
+        </div>
+      </div>
+    </div>
+    <!-- 2nd row******************* -->
+    <div class="row gx-2 mb-3">
+      <div class="col-lg-3 p-2">
+        <div class="rounded-3 shadow-lg">
+          <!-- a5************** -->
+                <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/accessories/a5.jfif' %}" alt="">
+            <div class="text-center">
+                <h4 class="fw-bolder">Gloves</h4>
+                <p>Thorns and splinters are preventable by gloves.So a huge range of gloves available for better protection and comfort than ever before.</p>
+                <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:70</p>
+                <span>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                </span>
+            </div>
+              <div class="row-cols-3 center-item">
+                <div class="input-group number-spinner px-1  py-2">
+                  <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                   <button  id="case-minus" class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+                   <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+        </div>
+      </div>
+      <div class="col-lg-3 p-2" >
+        <div class="rounded-3 shadow-lg">
+          <!-- a6************ -->
+            <img class="img-fluid rounded-3 w-100 border-3 p-4" src="{% static 'img/accessories/a6.jfif' %}"  alt="">
+            <div class="text-center">
+                <h4 class="fw-bolder">Hedge Shears</h4>
+                <p>Hedge Shears are specifically designed to make caring for your hedges, shrubs and decorative grasses easy.</p>
+                <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:220</p>
+                <span>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                </span>
+            </div>
+              <div class="row-cols-3 center-item">
+                <div class="input-group number-spinner px-1  py-2">
+                  <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                   <button  id="case-minus" class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+                   <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+        </div>
+      </div>
+      <div class="col-lg-3 p-2">
+        <div class="rounded-3 shadow-lg">
+          <!-- a7***************** -->
+                <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/accessories/a7.jfif' %}" alt="">
+            <div class="text-center">
+                <h4 class="fw-bolder">Hoe</h4>
+                <p>Hoe is essential for cultivating your soil, edging your lawn,other gardening tasks & preparing beds for planting and weeding.</p>
+                <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:300</p>
+                <span>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                </span>
+            </div>
+              <div class="row-cols-3 center-item">
+                <div class="input-group ">
+                  <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                   <button  id="case-minus" class="btn btn-success px-1 px-1 "><i class=" fas fa-minus"></i></button>
+                   <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                   <button id="case-plus"  class="btn btn-success px-1 px-1 "><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+     
+        </div>
+      </div>
+      <div class="col-lg-3 p-2">
+        <div class="rounded-3 shadow-lg">
+          <!-- a8****************** -->
+                <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/accessories/a8.jfif' %}" alt="">
+            <div class="text-center">
+                <h4 class="fw-bolder">Rake</h4>
+                <p>Rake used for remove stones, rocks and clogs before planting,levelling and smoothing the surface of the soil or collects leaves and weeds.</p>
+                <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:200</p>
+                <span>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                </span>
+            </div>
+            <div class="row-cols-lg-6 center-item">
+              <div class="input-group">
+                <button style="border: 2px solid burlywood;" class="btn   text-dark mx-2">Add to Cart</Button>
+                 <button id="case-plus"  class="btn btn-success px-1 "><i class="fas fa-minus "></i></button>
+
+               <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                  
+                 <button id="case-plus"  class="btn btn-success px-1 "><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+     
+        </div>
+      </div>
+    </div>
+    <div class="row gx-2">
+      <div class="col-lg-3 p-2">
+        <div class="rounded-3 shadow-lg">
+          <!-- a9***************** -->
+                <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/accessories/a9.jfif' %}" alt="">
+            <div class="text-center">
+                <h4 class="fw-bolder">Scissors</h4>
+                <p>scissors used to deadhead flowers, harvest veggies, and snip herbs. You can't beat scissors for cutting seed packets or potting soil bags.
+                </p>
+                <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:60</p>
+                <span>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                </span>
+            </div>
+              <div class="row-cols-3 center-item">
+                <div class="input-group number-spinner px-1  py-2">
+                  <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                   <button  id="case-minus" class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+                   <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+        </div>
+      </div>
+      <div class="col-lg-3 p-2" >
+        <div class="rounded-3 shadow-lg">
+          <!-- a10************** -->
+            <img class="img-fluid rounded-3 w-100 border-3 p-4" src="{% static 'img/accessories/a10.jfif' %}"  alt="">
+            <div class="text-center">
+                <h4 class="fw-bolder">Sickle</h4>
+                <p>Sickle is harvesting hand tool used for harvesting of vegetables, cereal crops and cutting of the grass and other vegetative matters.</p>
+                <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:200</p>
+                <span>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                </span>
+            </div>
+              <div class="row-cols-3 center-item">
+                <div class="input-group number-spinner px-1  py-2">
+                  <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                   <button  id="case-minus" class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+                   <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+        </div>
+      </div>
+      <div class="col-lg-3 p-2">
+        <div class="rounded-3 shadow-lg">
+          <!-- a11************************ -->
+                <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/accessories/a11.jfif' %}" alt="">
+            <div class="text-center">
+                <h4 class="fw-bolder">Watering Can</h4>
+                <p>Watering cans are used to water flowers to prevent them from wilting and dying,also used for watering any plants. </p>
+                <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:150</p>
+                <span>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                </span>
+            </div>
+              <div class="row-cols-3 center-item">
+                <div class="input-group number-spinner px-1  py-2">
+                  <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                   <button  id="case-minus" class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+                   <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+     
+        </div>
+      </div>
+      <div class="col-lg-3 p-2">
+        <div class="rounded-3 shadow-lg">
+          <!-- a12****************** -->
+                <img class="img-fluid rounded-3 border-3 w-100 p-4"src="{% static 'img/accessories/a12.jfif' %}" alt="">
+            <div class="text-center">
+                <h4 class="fw-bolder">Wheelbarrow</h4>
+                <p>wheelbarrow used for moving heavy and awkward gardening materials around your garden and easily transport them as you want.</p>
+                <p class="text-center text-danger fw-bold" style="font-size: 23px;">Price:400</p>
+                <span>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                  <i class="far fa-star text-warning"></i>
+                </span>
+            </div>
+              <div class="row-cols-3 center-item">
+                <div class="input-group number-spinner px-1  py-2">
+                  <button style="border: 1px solid red;" class="btn p-2  a btn-white text-danger mx-3">Add To Cart </button>
+                   <button  id="case-minus" class="btn btn-success px-1"><i class="fas fa-minus"></i></button>
+                   <input id="case-number" type="number" min="0" class="px-2 form-control text-center" value="0">
+                   <button id="case-plus"  class="btn btn-success px-1"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+     
+        </div>
+      </div>
+    </div>
+
+    <!-- 2div*** -->
+  </div>
+  </div>
+     
+     
+
+{% endblock%}

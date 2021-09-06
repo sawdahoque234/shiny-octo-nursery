@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+{% load static%}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/49b5d89c03.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <title>Document</title>
+    <style>
+        .nav-link{
+            font-size: 18px;
+        }
+        ul li .nav-link:hover{
+            text-decoration: underline;
+            background-color:white;
+            color:green !important;
+            border-radius: 6px;
+            transition-delay: 0.4s;
+            transform: scale(1.07);
+            transition: transform 0.5s ease-in-out;
+        }
+        ul li .dropdown-item:hover{
+            text-decoration: underline;
+            transform: scale(1.06);
+            transition: transform 0.5s ease-in-out;
+            border-radius: 20px;
+
+        }
+        
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-success ">
+    <div class="container-fluid ">
+      <a class="navbar-brand  px-4 mx-4 py-0" href="#"><img width="60px"  style="border-radius: 10px;"src="{% static 'img/images.png'%}" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2  mb-lg-0">
+          
+          <li class="nav-item mx-2">
+            <a class="nav-link text-white fw-bold  mx-0 py-1 my-2 " id="#fruit" href="{% url 'index' %}">Home</a>
+          </li>
+          <li class="nav-item dropdown mx-2">
+            <a class="nav-link dropdown-toggle text-white fw-bold  mx-0 py-1 my-2 " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Plants
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item  fw-bold bg-primary text-white" href="{% url 'flower' %}">Flower Plants</a></li>
+              <li><a class="dropdown-item  fw-bold bg-light" href="{% url 'fruits' %}">Fruits Plants</a></li>
+              <li><a class="dropdown-item  fw-bold bg-primary text-white"  href="{% url 'timber' %}">Timber Plants</a></li>
+              <li><a class="dropdown-item  fw-bold bg-light" href="{% url 'herbal' %}">Herbal Plants</a></li>
+              <li><a class="dropdown-item  fw-bold bg-primary text-white" href="{% url 'indoor' %}">Indoor Plants</a></li>
+              <li><a class="dropdown-item  fw-bold bg-light" href="{% url 'foreign' %}">Foreign Plants</a></li>
+              <li><a class="dropdown-item  fw-bold bg-primary text-white" href="{% url 'spices' %}">Spices Plants</a></li>
+              <li><a class="dropdown-item  fw-bold bg-light" href="{% url 'vegetable' %}">Vegetable Plants</a></li>
+            </ul>
+          </li>
+         
+          <li class="nav-item dropdown mx-2">
+            <a class="nav-link dropdown-toggle text-white fw-bold  mx-0 py-1 my-2 " href="{% url 'seed' %}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Seeds
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item  fw-bold bg-light" href="{% url 'seed' %}">Fruits Seeds</a></li>
+              <li><a class="dropdown-item  fw-bold bg-secondary text-white " href="{% url 'seed' %}">Vegetable Seeds</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown mx-2">
+            <a class="nav-link dropdown-toggle text-white fw-bold  mx-0 py-1 my-2 " href="{% url 'bouquet' %}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Bouquet
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item  fw-bold bg-secondary text-white" href="{% url 'bouquet' %}">Flower Bouquet</a></li>
+              <li><a class="dropdown-item  fw-bold bg-success text-white" href="{% url 'bouquet' %}">Wedding Bouquet</a></li>
+            </ul>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link text-white fw-bold  mx-0 py-1 my-2 " href="">Fertilizer</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link text-white fw-bold  mx-0 py-1 my-2 " href="{% url 'accessories' %}">Accessories</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link text-white fw-bold  mx-0 py-1 my-2 " href="{% url 'tips' %}">Tips</a>
+          </li>
+          
+          <li class="nav-item mx-2">
+            <a class="nav-link text-white fw-bold  mx-0 py-1 my-2 " href="{% url 'contact' %}">Contact</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link bg-light text-danger rounded-2  px-4 mx-0 py-1 my-2 text-decoration-none fw-bold" href="{% url 'cart' %}">Cart</a>
+          </li>
+          <ul class="navbar-nav ms-auto">
+            <div class="btn btn-success "><a href="{% url 'signup' %}" style="text-decoration: none;color:white;"><i class="fas fa-user-plus  "></i>Signup</a></div>
+            <div class="btn btn-success "><a href="{% url 'login' %}"style="text-decoration: none;color:white;"><i class="fas fa-user  "></i>Login</a></div>
+        </ul>
+         
+          
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</body>
+</html>
